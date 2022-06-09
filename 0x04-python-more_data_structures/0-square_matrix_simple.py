@@ -7,13 +7,9 @@
 
 #     return (new_matrix)
 
-def SquareList(L):
+def square_matrix_simple(L):
     if type(L) is list:
-        return [SquareList(x) for x in L]
+        return [square_matrix_simple(x) for x in L]
     else:
-        return L**2
-
-print(SquareList([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]]))
+        new_matrix = L**2
+        return new_matrix
