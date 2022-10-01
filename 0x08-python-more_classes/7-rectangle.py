@@ -153,3 +153,10 @@ class Rectangle:
 
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
+
+my_rectangle_2 = Rectangle(7, 10)
+print(my_rectangle_2)
+print("--")
+Rectangle.print_symbol = "&"
+print(my_rectangle_2)
+print("--")
